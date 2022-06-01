@@ -1,12 +1,14 @@
-:root{
-
-}
 #body{
     margin: 3% 35% 3%; 
     height: 530px;
     width:400px;
     position: absolute;
+    border-radius:50px;
 
+}
+#emailHelp{
+    color:rgba(255, 255, 255, 0.774);
+    font-family:italic;
 }
 h1{
     text-align: center;
@@ -31,17 +33,29 @@ h1{
 
 
 @media only screen and (min-width:320px) and (max-width:480px) {
-
+    #body{
+     margin:3% 1% 0%;
+     border-radius:15px;   
+    }
 }
 @media only screen and (min-width:481px) and (max-width:768px) {
-
+    #body{
+        margin:3% 1% 0%;
+        border-radius:20px;   
+       }
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
-    
+    #body{
+        border-radius:30px;   
+       }
 }
 @media only screen and (min-width:1025px) and (max-width:1200px) {
-    
+    #body{
+        border-radius:40px;   
+       }
 }
 @media only screen and (min-width:1201px) {
-    
+    #body{
+        border-radius:50px;   
+       }
 }
