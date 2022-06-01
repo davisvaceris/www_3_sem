@@ -6,7 +6,12 @@
     height: 530px;
     width:400px;
     position: absolute;
+    border-radius:50px;
 
+}
+#emailHelp{
+    color:rgba(255, 255, 255, 0.774);
+    font-family:italic;
 }
 h1{
     text-align: center;
