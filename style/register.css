@@ -38,18 +38,39 @@ h1{
     font-size: 0.8em;
     visibility:visible;
 }
-
-
-@media only screen and (min-width:320px) and (max-width:480px) {
+.accept:not(#policies){
+    border:5px solid #0f0;
+}
+.reject:not(#policies){
+    border:5px solid #f00;
+}
+.accept#policies {
+    border:2px solid #0f0;
+}
+.reject#policies{
+    border:3px solid #f00;
+}
+@media only screen  and (max-width:480px) {
     #body{
-     margin:3% 1% 0%;
-     border-radius:15px;   
+     margin:0%;
+     width:100vw; 
+     border-radius:0px;
+    }
+    .video-container{
+        width: 480px;
+    }
+    #body input:not(.form-check-input){
+     width: 90vw;
     }
 }
 @media only screen and (min-width:481px) and (max-width:768px) {
     #body{
-        margin:3% 1% 0%;
-        border-radius:20px;   
+        margin:0%;
+        width:100vw;
+        border-radius:0px;
+       }
+       #body input:not(.form-check-input){
+        width: 60vw;
        }
 }
 @media only screen and (min-width:769px) and (max-width:1024px) {
@@ -66,4 +87,9 @@ h1{
     #body{
         border-radius:50px;   
        }
+}
+@media only screen and (max-height:600px){
+    .video-container{
+        height: 600px;;
+    }
 }

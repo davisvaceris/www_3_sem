@@ -21,7 +21,9 @@ function login(username, password) {
                 sessionStorage.setItem("username",username)
                 sessionStorage.setItem("login", true)
             }
-            window.location.replace('home.html');
+            document.body.style.cursor='wait';
+            setTimeout(()=>{window.location.replace('home.html');},3000);
+            
         }
     }
 }

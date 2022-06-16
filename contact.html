@@ -8,7 +8,7 @@
     <link rel="icon" href="img/tests.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 
-    <title>Home | Davis Vaceris</title>
+    <title>Contacts | Davis Vaceris</title>
   </head>
   <body>
     <div id="body" style="height: 3000px;">
@@ -21,7 +21,7 @@
 
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="">Home</a>
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link"  id="nav_info" href="info.html">Usefull information</a>
@@ -50,17 +50,64 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link"  id="nav_info" id="nav_contact">Contact</a>
+                  <a class="nav-link" id="nav_contact" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-     
-    <h1>Home Page</h1>
-    <h2 id="greetings">Hello, </h2>
-  </div>
+     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h1>Contacts Page</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <address>
+            Author: <strong>Dāvis Vāceris</strong><br>
+            website: <strong>http://www.davisvaceris.42web.io</strong><br>
+            country: <strong>Latvia</strong><br>
+            city: <strong>Jelgava</strong><br>
+            street: <strong>Liela street 2</strong><br>
+            post index: <strong>LV-3001</strong>
+          </address>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-2">
+          <p>Map of address</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2193.0755062464614!2d23.731674415965795!3d56.655759780804516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ef2544a622adcb%3A0x25e9c51fdb577a86!2sLiel%C4%81%20iela%202%2C%20Jelgava%2C%20LV-3001%2C%20Latvia!5e0!3m2!1sen!2sno!4v1655285124884!5m2!1sen!2sno" 
+          width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map">
+        </iframe>
+      </div>
+     </div>
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script/main.js"></script>
   </body>
+  <footer >
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-2 pt-3">
+          <img id="logo" src="img/tests.ico">
+        </div>
+        <div class="col-6 pt-3">
+          <h1>davis vaceris website</h1>
+        </div>
+        <hr class="fh">
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <p><span class="copyright">&copy;</span><span class="trademark">&trade;</span>All rights and terms reserved @ <a href="home.html" target="_blank" title="Home">davisvaceris.42web.io</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>

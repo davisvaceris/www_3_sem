@@ -1,12 +1,17 @@
 
     var nav_main = document.getElementById("nav_main");
     var logout =document.getElementById("logout");
-    var greet = document.getElementById("greetings");
+    var loc = window.location.pathname;
+    var file = loc.substring(loc.lastIndexOf('/')+1, loc.lastIndexOf('.'));
+    var home= false;
+    
+ if(Cookies.get('username',{path:'/'})==null&&sessionStorage.getItem('username',{path:'/'})==null&&file!="privacy"){ window.location.replace('index.html') }
+ if(file=="home"){var greet = document.getElementById("greetings"); home=true;}
 //if cookies is checked then
  if(Cookies.get('username',{path:'/'})!=null){
     var usr=Cookies.get('username',{path:'/'});
     nav_main.innerHTML =usr;
-   greet.innerHTML = "Hello, " + usr+ "!";
+    if(home){   greet.innerHTML = "Hello, " + usr+ "!";}
    logout.onclick = function(){
        Cookies.remove('username');
        Cookies.remove('login');
@@ -17,7 +22,7 @@
  else{
      var usr= sessionStorage.getItem('username',{path:'/'});
      nav_main.innerHTML =usr;
-     greet.innerHTML = "Hello, " + usr+ "!";
+     if(home){greet.innerHTML = "Hello, " + usr+ "!";}
      logout.onclick = function(){
         sessionStorage.removeItem('username');
         sessionStorage.removeItem('login');

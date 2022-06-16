@@ -1,0 +1,36 @@
+.content :not(h1):not(h2):not(h3):not(a):not(u li) {
+    padding:0 24px 0 20px;
+    text-indent:12px;
+    text-align:justify;
+}
+.content a:link {
+    color: #e79e00
+}
+.content a:visited {
+    color: #e2bb67
+}
+.content a:hover {
+    color: #e2ff3b
+}
+.content a:active {
+    color: #ffffff
+}
+.content h1, .content h2, .content h3, .content u li{
+    padding:0 30px 0 20px;
+    text-indent:18px;
+}
+.hiden{
+ visibility:hidden;
+}
+.visible{
+visibility:visible
+}
+#body{
+    height:100%;
+}
+#body div.content{
+    padding-bottom:2%;
+}
+.content ul{
+    margin-left:14px;
+}
